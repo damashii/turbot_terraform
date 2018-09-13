@@ -19,9 +19,9 @@ output "turbot_int_subnets" {
 }
 
 output "turbot_default_sg" {
-  value = "${data.aws_security_group.default.id}"
+  value = ["${data.aws_security_group.default.id}"]
 }
 
 output "turbot_webvpc_sg" {
-  value = "${data.aws_security_group.webvpc.id}"
+  value = ["${data.aws_security_group.webvpc.id}"]
 }
